@@ -1,4 +1,4 @@
-# Facer - Simple face recognition with Amazon Rekogntion.
+# Facer - Simple face recognition with Amazon Rekogntion
 
 Simple face recognition with Amazon Rekogntion.
 
@@ -10,20 +10,20 @@ Simple face recognition with Amazon Rekogntion.
 
 ### Setup```$ facer setup --collection my_collection --path /path/to/images```
 1. Creates a DynamoDB table called *'my_collection'*.2. Creates a [Rekognition collection](http://docs.aws.amazon.com/rekognition/latest/dg/howitworks-collection.html) called *'my_collection'*.3. For each image in `/path/to/images`, adds the image to the collection. Also adds the face ID and name (the file name) to the DynamoDB table.
-### Add```$ facer add --name John Doe --collection my_collection```
+### Add a new face```$ facer add --name John Doe --collection my_collection```
 1. Grabs a frame from the camera and saves it to a temp file.
 2. Adds the captured image to the collection *'my_collection'*. Also adds the face ID and name (*'John Doe'*) to the DynamoDB table.
 
 
-### Recognize```$ facer capture --collection my_collection
+### Recognize a face```$ facer capture --collection my_collection
 ```
-1. Grabs a frame from the camera and saves it to a temp file2. Compares the captured image to the faces in the collection *'my_collection'* and checks if a match is found. 
+1. Grabs a frame from the camera and saves it to a temp file2. Compares the captured image to the faces in the collection *'my_collection'* and checks if a match is found.
 
 ## Contributing
 
-Please [create a new GitHub issue](https://github.com/dstroppa/facer/issues/new) for any feature requests, bugs, or documentation improvements. 
+Please [create a new GitHub issue](https://github.com/dstroppa/facer/issues/new) for any feature requests, bugs, or documentation improvements.
 
-Where possible, please also [submit a pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) for the change. 
+Where possible, please also [submit a pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) for the change.
 
 ## License
 
